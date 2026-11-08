@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dorabot-ngay-le"
+version = "1.0.0"
+description = "Ngày nghỉ lễ, Tết Việt Nam 2026–2040 có nghỉ bù, hoán đổi ngày làm việc theo thông báo Bộ Nội vụ, Ngày Văn hóa 24/11; đếm, cộng ngày làm việc. Vietnam public holidays and business days."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT (code), CC BY 4.0 (data)" }
+authors = [{ name = "Dorabot (dorabot.io, Việt Nam)", email = "support@dorabot.io" }]
+keywords = ["vietnam", "holidays", "public-holidays", "ngay-le", "tet", "nghi-bu", "business-days", "working-days", "payroll"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: Vietnamese",
+  "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://dorabot.io/lich-am/nha-phat-trien/"
+Source = "https://github.com/Dorabot-io/ngay-le"
+
+[tool.setuptools]
+packages = ["dorabot_ngay_le"]
+
+[tool.setuptools.package-data]
+dorabot_ngay_le = ["data/*.json"]

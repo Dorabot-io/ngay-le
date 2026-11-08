@@ -1,0 +1,23 @@
+{
+  "name": "@dorabot-io/ngay-le",
+  "version": "1.0.0",
+  "description": "Ngày nghỉ lễ, Tết Việt Nam 2026–2040 có nghỉ bù, hoán đổi ngày làm việc theo thông báo Bộ Nội vụ, Ngày Văn hóa 24/11; đếm và cộng ngày làm việc. Vietnam public holidays with compensatory days off and swapped working days.",
+  "type": "module",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": { "types": "./index.d.ts", "default": "./index.js" },
+    "./data/ngay-le.js": "./data/ngay-le.js",
+    "./package.json": "./package.json"
+  },
+  "sideEffects": false,
+  "files": ["index.js", "index.d.ts", "data", "README.md", "AGENTS.md", "llms.txt", "LICENSE"],
+  "scripts": { "test": "node --test test.mjs" },
+  "engines": { "node": ">=16" },
+  "keywords": ["vietnam", "viet-nam", "holidays", "public-holidays", "ngay-le", "nghi-le", "tet", "nghi-bu", "lich-nghi", "business-days", "working-days", "payroll", "cham-cong"],
+  "homepage": "https://dorabot.io/lich-am/nha-phat-trien/",
+  "repository": { "type": "git", "url": "git+https://github.com/Dorabot-io/ngay-le.git" },
+  "bugs": { "url": "https://github.com/Dorabot-io/ngay-le/issues", "email": "support@dorabot.io" },
+  "author": "Dorabot (dorabot.io, Việt Nam) <support@dorabot.io>",
+  "license": "MIT"
+}
